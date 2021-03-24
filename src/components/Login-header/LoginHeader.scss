@@ -1,0 +1,29 @@
+.login-header{
+    display: flex;
+    background-color: #CC0000;
+    flex-direction: column;
+    width: 220px;
+    height: 60px;
+    padding: 15px;
+    @media screen and(max-width:767px) {
+        width: 91%;
+    }
+    @media screen and (min-width:539px) and (max-width:541px) {
+        width: 94%;
+    }
+    @media screen and(max-width:321px) {
+        width: 88%;
+    }
+    .title{
+        font-family: Microsoft JhengHei;
+        font-size: 14px;
+        color: white;
+    }
+
+    .subtitle{
+        font-family: Microsoft JhengHei;
+        font-size: 38px;
+        font-weight: bold;
+        color: white;
+    }
+}

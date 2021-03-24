@@ -1,0 +1,45 @@
+.team-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    height: 555px;
+    width: 80%;
+    margin: 90px 10px 0px;
+    padding: 25px 20px 0px;
+
+    @media screen and (max-width:991px) {
+        margin: 10px 20px 0px 0px;
+        width: 95%;
+    }
+
+    @media screen and (max-width:767px) {
+        margin: 10px 20px 0px 0px;
+        width: 90%;
+    }
+
+    @media screen and (max-width:321px){
+        width: 85%;
+    }
+
+    .team-content-title{
+        font-size: 35px;
+        font-weight: 500;
+        @media screen and (max-width:321px){
+            font-size: 28px;
+        }
+    }
+
+    .team-member{
+        margin-top: 20px;
+        .member-name{
+            position: relative;
+            bottom: 10px;
+            font-weight: 500;
+        }
+        .member-image{
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+    }
+}

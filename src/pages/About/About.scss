@@ -1,0 +1,16 @@
+.about{
+    display: flex;
+    padding: 50px;
+    
+    @media screen and (max-width:991px) {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}

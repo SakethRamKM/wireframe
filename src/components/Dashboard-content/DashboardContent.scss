@@ -1,0 +1,126 @@
+.dashboard-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    height: 560px;
+    width: 80%;
+    margin: 90px 10px 0px;
+    padding: 20px 20px 0px;
+
+    @media screen and (max-width:991px) {
+        margin: 10px 20px 0px 0px;
+        width: 95%;
+    }
+
+    @media screen and (max-width:767px) {
+        margin: 10px 20px 0px 0px;
+        width: 90%;
+    }
+
+    @media screen and (max-width:321px){
+        width: 85%;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+
+    .welcome-section{
+        display: flex;
+        margin-bottom: 10px;
+        .welcome-section-image{
+           height: 70px;
+           width: 80px;
+           margin-right: 10px;
+           @media screen and (max-width:321px){
+            height: 100px;
+        }
+        }
+        .welcome-section-content{
+            display: flex;
+            flex-direction: column;
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 15px;
+            .last-login{
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+    }
+   
+
+    .account-section{
+        #account-balance{
+            font-size: 20px;
+            font-weight: 500;
+            color:  #CC0000;
+        }
+        .account-table{
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: rgb(189, 187, 187);
+        }
+        td{
+            border: 1px solid black;
+            &:first-child{
+                width: 20%;
+            }
+        }
+    }
+
+    .subscribe-section{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+        }
+        .subscribe{
+            display: flex;
+            flex-direction: column;
+             .subscribe-to-alerts{
+                font-size: 20px;
+                 font-weight: 500;
+                 margin-bottom: 10px;
+             }
+        }
+        .data-binding{
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width:767px){
+                margin-top: 10px;
+            }
+            .two-way{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .two-way-input{
+                width: 300px;
+                height: 30px;
+
+                @media screen and (max-width:767px){
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    .submit{
+        background-color: rgb(76, 163, 197);
+        border: none;
+        color: white;
+        width: 10%;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+        @media screen and (max-width:767px) {
+            width: 30%;
+        }
+    }
+
+
+}

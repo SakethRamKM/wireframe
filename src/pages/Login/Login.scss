@@ -1,0 +1,12 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    // padding: 50px 200px 0 200px;
+    width: 60%;
+    margin: 15vh 10% 0 20%;
+
+    @media screen and (max-width:991px) {
+        margin: 15vh 5% 0 5%;
+        width: 90%;
+    }
+}

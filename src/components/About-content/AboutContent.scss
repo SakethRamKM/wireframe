@@ -1,0 +1,56 @@
+.about-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    height: 555px;
+    width: 80%;
+    margin: 90px 10px 0px;
+    padding: 25px 20px 0px;
+
+    @media screen and (max-width:991px) {
+        margin: 10px 20px 0px 0px;
+        width: 95%;
+    }
+
+    @media screen and (max-width:767px) {
+        margin: 10px 20px 0px 0px;
+        width: 90%;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (max-width:321px){
+        width: 85%;
+    }
+
+    .about-content-title{
+        font-size: 35px;
+        font-weight: 500;
+        @media screen and (max-width:321px){
+            font-size: 28px;
+        }
+    }
+
+    .about-content-theory{
+        display: flex;
+        margin-bottom: 20px;
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+        }
+        .jsimage{
+            width: 30%;
+            margin-right:20px;
+            @media screen and (max-width:767px) {
+                height:150px;
+                width: 100%;
+            }
+        }
+        .js-theory{
+            width: 60%;
+            @media screen and (max-width:767px) {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+}

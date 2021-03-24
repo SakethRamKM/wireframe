@@ -1,0 +1,77 @@
+.login-content{
+    display: flex;
+    background-color: #CC0000;
+    flex-direction: column;
+    height:fit-content;
+    padding: 15px;
+
+    .user-id{
+        color: white;
+        margin:40px 0 0;
+        font-size: 20px;
+
+        @media screen and(max-width:767px) {
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            height: 25px;
+            width:30%;
+            margin-left: 38px;
+            @media screen and(max-width:767px) {
+                width: 70%;
+                margin: 10px 0 0;
+            }
+        }
+    }
+
+    .password{
+        color: white;
+        font-size: 20px;
+        margin-top: 15px;
+        @media screen and(max-width:767px) {
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            height: 25px;
+            width:30%;
+            margin-left: 20px;
+            @media screen and(max-width:767px) {
+                width: 70%;
+                margin: 10px 0 0;
+            }
+        }
+    }
+
+    .login-button{
+        margin-left: 80%;
+        margin-top: 80px;
+        width: 80px;
+        @media screen and(max-width:767px) {
+            margin-left: 70%;
+            margin-top: 40px;
+        }
+        @media screen and(max-width:290px) {
+            margin-left: 60%;
+        }
+        button{
+            background-color: #CC9900;
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            color: #FFF;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .login-error-msg{
+        color: white;
+        background-color: rgb(248, 69, 69);
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
